@@ -3,14 +3,17 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World TURMA!')
+  res.send('API-BOOK está funcionando!')
 })
 
-// endpoint para a rota /turma
-app.get('/turma', (req, res) => {
-  res.send('Me acompanhem nesse teste TURMA!')
+app.get('/books', (req, res) => {
+  res.json([
+    { id: 1, title: 'Harry Potter', author: 'J.K. Rowling' },
+    { id: 2, title: 'Senhor dos Anéis', author: 'J.R.R. Tolkiens' },
+    { id: 3, title: 'O Hobbit', author: 'J.R.R. Tolkiens' }
+  ])
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`API-BOOK rodando na porta ${port}`)
 })
