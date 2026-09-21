@@ -1,0 +1,23 @@
+{
+  "name": "api-book",
+  "version": "1.0.0",
+  "description": "Praticando uso do EXPRESS.JS para criar uma API REST",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaaws/api-book.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spaaws/api-book/issues"
+  },
+  "homepage": "https://github.com/spaaws/api-book#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
